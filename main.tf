@@ -12,10 +12,16 @@ resource "github_repository" "ops-core" {
  auto_init   = true
 }
 
-
 resource "github_repository" "cs50-python" {
  name        = "cs50-python"
  description = "Repository for my notes and solutions of CS50 Python"
+ visibility  = "public"
+ auto_init   = true
+}
+
+resource "github_repository" "cloud-native-labs" {
+ name        = "cloud-native-labs"
+ description = "my labs for cloud native infrastructure tools"
  visibility  = "public"
  auto_init   = true
 }
